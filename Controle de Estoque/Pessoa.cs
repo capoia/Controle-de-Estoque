@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Controle_de_Estoque
 {
-    class Pessoa
+    public class Pessoa
     {
+        public string nome, email;
+        
+
+
     }
 }

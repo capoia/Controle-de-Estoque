@@ -35,7 +35,6 @@
             this.txt_usuario = new System.Windows.Forms.TextBox();
             this.lbl_senha = new System.Windows.Forms.Label();
             this.btn_login = new System.Windows.Forms.Button();
-            this.btn_sair = new System.Windows.Forms.Button();
             this.pgb_login = new System.Windows.Forms.ProgressBar();
             this.tmr_login = new System.Windows.Forms.Timer(this.components);
             this.mtb_senha = new System.Windows.Forms.MaskedTextBox();
@@ -85,22 +84,13 @@
             // 
             // btn_login
             // 
-            this.btn_login.Location = new System.Drawing.Point(121, 131);
+            this.btn_login.Location = new System.Drawing.Point(158, 120);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(75, 23);
             this.btn_login.TabIndex = 3;
             this.btn_login.Text = "Entrar";
             this.btn_login.UseVisualStyleBackColor = true;
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
-            // 
-            // btn_sair
-            // 
-            this.btn_sair.Location = new System.Drawing.Point(202, 131);
-            this.btn_sair.Name = "btn_sair";
-            this.btn_sair.Size = new System.Drawing.Size(75, 23);
-            this.btn_sair.TabIndex = 4;
-            this.btn_sair.Text = "Sair";
-            this.btn_sair.UseVisualStyleBackColor = true;
             // 
             // pgb_login
             // 
@@ -110,7 +100,7 @@
             this.pgb_login.Location = new System.Drawing.Point(-3, 240);
             this.pgb_login.MarqueeAnimationSpeed = 60;
             this.pgb_login.Name = "pgb_login";
-            this.pgb_login.Size = new System.Drawing.Size(291, 20);
+            this.pgb_login.Size = new System.Drawing.Size(292, 20);
             this.pgb_login.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.pgb_login.TabIndex = 8;
             this.pgb_login.Visible = false;
@@ -133,7 +123,6 @@
             this.ClientSize = new System.Drawing.Size(285, 245);
             this.Controls.Add(this.mtb_senha);
             this.Controls.Add(this.pgb_login);
-            this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.lbl_senha);
             this.Controls.Add(this.txt_usuario);
@@ -162,7 +151,6 @@
         private System.Windows.Forms.TextBox txt_usuario;
         private System.Windows.Forms.Label lbl_senha;
         private System.Windows.Forms.Button btn_login;
-        private System.Windows.Forms.Button btn_sair;
         private System.Windows.Forms.Timer tmr_login;
         private System.Windows.Forms.ProgressBar pgb_login;
         private System.Windows.Forms.MaskedTextBox mtb_senha;

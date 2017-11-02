@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace Controle_de_Estoque
 {
@@ -14,15 +16,23 @@ namespace Controle_de_Estoque
         [STAThread]
         static void Main()
         {
+            
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            //Inicia o login 
             frm_login logar = new frm_login();
             if (logar.ShowDialog() == DialogResult.OK)
             {
-                Application.Run(new frm_inicial());
+                Application.Run(new frm_telainicial());
 
             }
 
+           
         }
+
+
     }
 }
+

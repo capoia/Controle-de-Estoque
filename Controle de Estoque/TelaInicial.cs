@@ -8,11 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Controle_de_Estoque
 {
-    public partial class frm_inicial : Form
+    public partial class frm_telainicial : Form
     {
-        public frm_inicial()
+        public frm_telainicial()
         {
             InitializeComponent();
             
@@ -54,6 +55,15 @@ namespace Controle_de_Estoque
 
         private void ms_menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
+
+        }
+
+        private void registrarVendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            frm_registrarvenda C = new frm_registrarvenda();
+            C.MdiParent = frm_telainicial.ActiveForm;
+            C.Show();
 
         }
     }

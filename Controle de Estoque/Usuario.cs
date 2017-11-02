@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace Controle_de_Estoque
 {
-    class Endereço
+    public class Usuario
     {
-        public string rua, complemento, cidade, bairro, numero;
+        public string senha { get; set; }
+        public string usuario { get; set; }
+        public string tipo { get; set; }
 
-        public Endereço()
-        {
-            
-
-        }
     }
 }
